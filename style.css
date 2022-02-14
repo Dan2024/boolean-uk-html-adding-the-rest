@@ -22,10 +22,9 @@ body {
 
 .header {
   grid-area: hd;
-  background-color: #d84727;
 }
 .grid-container > * {
-  background-color: rgb(212, 85, 26);
+  background-color: white;
 }
 
 .header-excess {
@@ -70,11 +69,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.eight-column-grid {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-}
-
 .align-center {
   align-items: center;
 }
@@ -109,4 +103,38 @@ body {
   height: 3.4em;
   padding: 2px 23px 2px 30px;
   background-color: rgb(228, 220, 220);
+}
+
+.status-type i {
+  padding: 10px 0;
+  justify-items: center;
+  font-size: 0.5em;
+  padding-left: 1em;
+  color: #666666;
+}
+
+.post-user {
+  padding-right: 5px;
+  color: #666666;
+}
+.main-status {
+  background-color: white;
+}
+
+.main-status > * {
+  padding: 10px;
+}
+
+.status-write {
+  font-size: 2.5rem;
+}
+
+.post-bar {
+  width: 95%;
+  align-self: center;
+  border: none;
+  border-radius: 15px;
+  height: 3em;
+  padding: 2px 20px;
+  border: solid 1px rgb(228, 220, 220);
 }
