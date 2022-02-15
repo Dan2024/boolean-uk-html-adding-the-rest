@@ -9,6 +9,10 @@ body {
   background-color: rgb(218, 223, 225);
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 /* defintion of main grid template */
 .grid-container {
   font-size: 1.5rem;
@@ -25,10 +29,6 @@ body {
 
 .header {
   grid-area: hd;
-}
-
-.header-excess {
-  grid-area: he;
 }
 
 .header {
@@ -48,10 +48,6 @@ body {
   grid-area: rc;
 }
 
-.grid-container > * {
-  background-color: white;
-}
-
 /* utility classes  */
 .three-column-grid__expand-two {
   display: grid;
@@ -63,7 +59,7 @@ body {
   grid-template-columns: auto 1fr;
 }
 
-.two-column-grid__expand-2 {
+.two-column-grid__expand-two {
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -71,6 +67,23 @@ body {
 .four-column-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.big-box {
+  margin: 5px;
+  height: 200px;
+  border: blue 2px dashed;
+}
+
+.small-box {
+  margin: 5px;
+  height: 50px;
+  border: green 2px dashed;
+}
+
+.very-big-box {
+  height: 500px;
+  border: violet 2px dashed;
 }
 
 /* specific element styling from here onwards */
@@ -84,7 +97,7 @@ body {
 .widget {
   font-size: 2rem;
   padding-left: 1em;
-  color: #666666;
+  color: rgb(66, 64, 64);
 }
 
 .linkedin-widget {
@@ -123,7 +136,7 @@ body {
 
 .post-user {
   padding-right: 5px;
-  color: #666666;
+  color: #312e2e;
 }
 
 .post-bar {
@@ -141,5 +154,73 @@ body {
   justify-items: center;
   font-size: 0.5em;
   padding-left: 1em;
+  color: #363434;
+}
+
+.main-container {
+  display: grid;
+  grid-auto-rows: min-content 80vh;
+  grid-gap: 10px;
+}
+
+.main-2 {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 10px;
+  overflow-y: scroll;
+}
+
+.main-2 div {
+  background-color: white;
+}
+/* left side styling */
+
+.left-container {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 10px;
+}
+
+.left-container > * {
+  background-color: white;
+}
+
+/* right side styling */
+
+.right-container {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-gap: 10px;
+}
+
+.right-container > * {
+  background-color: white;
+}
+
+.right-container li {
+  font-size: 1rem;
+}
+
+.sub-text {
+  font-size: 0.75rem;
   color: #666666;
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+h2,
+.sub-text,
+li {
+  padding-left: 10px;
+}
+
+li {
+  list-style-position: inside;
+  padding: 10px 0;
+}
+
+.news {
+  margin: 5px;
+  padding: 10px;
 }

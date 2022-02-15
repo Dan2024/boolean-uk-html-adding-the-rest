@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.grid-container {
+  margin: 10px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: auto 300px 1fr;
+  grid-gap: 10px;
+}
+
+.left-container {
+  border: solid 2px #5eb1bf;
+  grid-gap: 5px;
+  display: grid;
+  grid-template-rows: auto auto 1fr 2fr;
+}
+
+.main-container {
+  border: solid 2px #ef7b45;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.icon-bar {
+  border: solid 2px #042a2b;
+}
+
+.widget {
+  color: rgba(40, 47, 150, 0.685);
+  font-size: 2.5rem;
+  padding: 5px;
+}
+
+.icon-bar ul {
+  display: grid;
+  justify-items: center;
+}
+
+.left-container > * {
+  border: #042a2b solid 2px;
+}
+
+.left-1 {
+  padding: 20px;
+}
+
+.rooms {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
